@@ -1,0 +1,5 @@
+<resources>
+    <declare-styleable name="AdapterLayout">
+        <attr name="view_holder" format="string"/>
+    </declare-styleable>
+</resources>

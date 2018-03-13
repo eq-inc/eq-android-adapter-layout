@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jp.eq_inc.custom_view.MainActivity">
+
+    <jp.eq_inc.custom_view.AdapterLayout
+        android:id="@+id/alList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager">
+        <jp.eq_inc.custom_view.AdapterItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_res_id="@layout/item_layout">
+            <jp.eq_inc.custom_view.AdapterItemElement
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:view_res_id="@id/ivIcon"
+                app:getter="iconResId"
+                app:setter="setImageResource"
+                app:setter_type="method"
+                app:setter_value_type="int"/>
+            <jp.eq_inc.custom_view.AdapterItemElement
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:view_res_id="@id/tvTitle"
+                app:getter="getTitle"
+                app:getter_type="method"
+                app:setter="setText"
+                app:setter_type="method"
+                app:setter_value_type="java.lang.CharSequence"/>
+            <jp.eq_inc.custom_view.AdapterItemElement
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:view_res_id="@id/tvDescription"
+                app:getter="description"
+                app:getter_type="field"
+                app:setter="setText"
+                app:setter_type="method"
+                app:setter_value_type="java.lang.CharSequence"/>
+        </jp.eq_inc.custom_view.AdapterItem>
+    </jp.eq_inc.custom_view.AdapterLayout>
+</android.support.constraint.ConstraintLayout>

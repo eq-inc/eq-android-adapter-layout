@@ -1,0 +1,16 @@
+<resources>
+    <declare-styleable name="AdapterItemElement">
+        <attr name="view_res_id" format="reference"/>
+        <attr name="getter" format="string"/>
+        <attr name="getter_type" format="enum">
+            <enum name="method" value="0"/>
+            <enum name="field" value="1"/>
+        </attr>
+        <attr name="setter" format="string"/>
+        <attr name="setter_type" format="enum">
+            <enum name="method" value="0"/>
+            <enum name="field" value="1"/>
+        </attr>
+        <attr name="setter_value_type" format="string"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,5 @@
+<resources>
+    <declare-styleable name="AdapterItem">
+        <attr name="layout_res_id" format="reference"/>
+    </declare-styleable>
+</resources>
